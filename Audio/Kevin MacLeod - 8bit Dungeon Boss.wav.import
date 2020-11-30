@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kevin MacLeod - 8bit Dungeon Boss.wav-7041d1fc9092f38a79d0548bd48987e0.sample"
+
+[deps]
+
+source_file="res://Audio/Kevin MacLeod - 8bit Dungeon Boss.wav"
+dest_files=[ "res://.import/Kevin MacLeod - 8bit Dungeon Boss.wav-7041d1fc9092f38a79d0548bd48987e0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
