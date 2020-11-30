@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="PepeAdventure"
 run/main_scene="res://Scenes/Main.tscn"
 
+[autoload]
+
+Globals="*res://Scripts/Globals.gd"
+
 [display]
 
 window/size/width=640

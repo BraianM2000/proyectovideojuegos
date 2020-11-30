@@ -7,9 +7,11 @@ const JUMPFORCE = 450
 var FACING_RIGHT = true
 var motion = Vector2()
 
+
 func _physics_process(delta):
 	
 	motion.y += GRAVITY
+
 	
 	if FACING_RIGHT:
 		$Sprite.scale.x = 1
@@ -33,3 +35,4 @@ func _physics_process(delta):
 			motion.y = -JUMPFORCE
 	
 	motion = move_and_slide(motion, UP)
+	
