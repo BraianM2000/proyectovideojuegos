@@ -1,11 +1,13 @@
 extends KinematicBody2D
 
+export(float) var GRAVITY = 20
+export(float) var SPEED = 180
+export(float) var JUMPFORCE = 500
+
 const UP = Vector2(0, -1)
-const GRAVITY = 20
-const SPEED = 170
-const JUMPFORCE = 450
 var FACING_RIGHT = true
 var motion = Vector2()
+
 
 func _physics_process(delta):
 	
@@ -32,4 +34,6 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			motion.y = -JUMPFORCE
 	
+	
 	motion = move_and_slide(motion, UP)
+	
