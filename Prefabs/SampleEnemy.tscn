@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/MovePlatform.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sin título-1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 112, 64 )
+
+[node name="MovingPlatform" type="Node2D"]
+position = Vector2( 221.193, 130.813 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -409.31 ]
+}
+
+[node name="Platform" type="KinematicBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Platform"]
+modulate = Color( 0.0431373, 0.337255, 0.588235, 1 )
+position = Vector2( 6.807, -51.46 )
+scale = Vector2( 7.17949, 5.19608 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2( 0, -50.813 )
+shape = SubResource( 1 )
+
+[node name="MoveTween" type="Tween" parent="."]
+repeat = true
+playback_process_mode = 0
+playback/repeat = true
