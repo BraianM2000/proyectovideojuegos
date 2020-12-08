@@ -10,6 +10,7 @@ extents = Vector2( 155.437, 50.813 )
 position = Vector2( 221.193, 130.813 )
 script = ExtResource( 2 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_horizontal_guides_": [ -409.31 ]
 }
 
